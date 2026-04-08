@@ -1,0 +1,21 @@
+# Obsidian config (don't sync vault settings)
+.obsidian/
+
+# Claude settings
+.claude/
+
+# gstack
+.gstack/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Git (local)
+.git/
