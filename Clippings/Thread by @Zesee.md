@@ -2,7 +2,7 @@
 title: "Thread by @Zesee"
 source: "https://x.com/Zesee/status/2037800422329766104"
 author:
-  - "[[@Zesee]]"
+  - "@Zesee"
 published: 2026-03-28
 created: 2026-03-29
 description:

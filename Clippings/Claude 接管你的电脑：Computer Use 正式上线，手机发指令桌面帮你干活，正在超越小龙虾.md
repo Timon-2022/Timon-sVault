@@ -2,7 +2,7 @@
 title: "Claude 接管你的电脑：Computer Use 正式上线，手机发指令桌面帮你干活，正在超越小龙虾"
 source: "https://mp.weixin.qq.com/s/B3LM4PMxj3xPHPsyVsBggA"
 author:
-  - "[[石臻]]"
+  - "石臻"
 published:
 created: 2026-03-25
 description: "Claude 接管你的电脑：手机发指令，桌面自动执行任务。OSWorld 72.5%，接近人类水平。"

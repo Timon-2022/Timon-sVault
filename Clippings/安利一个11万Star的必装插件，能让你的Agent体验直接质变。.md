@@ -2,7 +2,7 @@
 title: "安利一个11万Star的必装插件，能让你的Agent体验直接质变。"
 source: "https://x.com/Khazix0918/status/2037015170091016257"
 author:
-  - "[[Unknown]]"
+  - "Unknown"
 published: 2026-01-15
 created: 2026-03-26
 description:
