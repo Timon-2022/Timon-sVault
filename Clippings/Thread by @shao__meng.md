@@ -2,7 +2,7 @@
 title: "Thread by @shao__meng"
 source: "https://x.com/shao__meng/status/2034562818046103665"
 author:
-  - "[[@shao__meng]]"
+  - "@shao__meng"
 published: 2026-03-19
 created: 2026-03-22
 description:

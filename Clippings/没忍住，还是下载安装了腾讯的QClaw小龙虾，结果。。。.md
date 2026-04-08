@@ -2,7 +2,7 @@
 title: "没忍住，还是下载安装了腾讯的QClaw小龙虾，结果。。。"
 source: "https://mp.weixin.qq.com/s/8YMybGp8qNp25E6ujONQ6A"
 author:
-  - "[[周萝卜]]"
+  - "周萝卜"
 published:
 created: 2026-03-27
 description: "好你个 QClaw"

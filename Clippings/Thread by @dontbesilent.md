@@ -2,7 +2,7 @@
 title: "Thread by @dontbesilent"
 source: "https://x.com/dontbesilent/status/2035077391266324525"
 author:
-  - "[[@dontbesilent]]"
+  - "@dontbesilent"
 published: 2026-03-21
 created: 2026-03-22
 description:

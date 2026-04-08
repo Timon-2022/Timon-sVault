@@ -2,7 +2,7 @@
 title: "How to 10x your Claude Skills (using Karpathy's autoresearch method) 如何将你的 Claude 技能提升十倍（使用 Karpathy 的自动研究方法）"
 source: "https://x.com/itsolelehmann/status/2033919415771713715?s=20"
 author:
-  - "[[Unknown]]"
+  - "Unknown"
 published: 2026-03-17
 created: 2026-03-22
 description:
