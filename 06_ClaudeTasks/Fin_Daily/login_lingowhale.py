@@ -14,11 +14,13 @@ try:
 
     def save_cookies(cookies, filename='lingowhale_cookies.json'):
         """保存 cookies 到文件"""
-        with open(filename, 'w', encoding='utf-8') as f:
+        descriptor = os.open(filename, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+        with os.fdopen(descriptor, 'w', encoding='utf-8') as f:
+            os.fchmod(f.fileno(), 0o600)
             json.dump(cookies, f, indent=2)
         print(f"✓ Cookies 已保存到: {filename}")
 
-    def login_and_save(username, password):
+    def login_and_save():
         """登录并保存 cookies"""
         with sync_playwright() as p:
             print("启动浏览器...")
@@ -35,9 +37,6 @@ try:
                 page.wait_for_load_state('networkidle')
 
                 print("\n请在打开的浏览器窗口中手动完成登录流程")
-                print("登录凭据：")
-                print(f"  用户名/手机: {username}")
-                print(f"  密码: {password}")
                 print("\n登录成功后，请等待页面加载完成...")
                 print("脚本将在 60 秒后自动保存 cookies\n")
 
@@ -67,11 +66,11 @@ try:
         import argparse
 
         parser = argparse.ArgumentParser(description='LingoWhale 登录工具')
-        parser.add_argument('--username', '-u', default='18810213016', help='用户名/手机号')
-        parser.add_argument('--password', '-p', default='0edn7dJqFPrGGgo', help='密码')
+
+
         args = parser.parse_args()
 
-        login_and_save(args.username, args.password)
+        login_and_save()
 
 except ImportError:
     print("错误: 需要安装 playwright")

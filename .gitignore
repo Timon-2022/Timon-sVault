@@ -19,3 +19,14 @@
 
 # Git (local)
 .git/
+
+# Local credentials and authenticated browser state
+.env
+.env.*
+!.env.example
+__pycache__/
+/06_ClaudeTasks/Fin_Daily/*cookies*.json
+/06_ClaudeTasks/Fin_Daily/login_state*.json
+/06_ClaudeTasks/Fin_Daily/storage_state*.json
+/06_ClaudeTasks/Fin_Daily/browser_user_data/
+/06_ClaudeTasks/Fin_Daily/logs/
