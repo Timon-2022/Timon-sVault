@@ -49,8 +49,6 @@
   },
   "rss": {
     "lingowhale_url": "https://lingowhale.com/channels",
-    "lingowhale_username": "18810213016",
-    "lingowhale_password": "0edn7dJqFPrGGgo",
     "require_login": true
   }
 }

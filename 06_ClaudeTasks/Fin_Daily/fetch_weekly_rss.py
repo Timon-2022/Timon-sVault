@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 from typing import List, Dict
 from collections import defaultdict
 import feedparser
+from credentials import load_config
 
 # Playwright 用于处理需要登录的网站
 try:
@@ -39,8 +40,7 @@ class RSSWeeklyFetcher:
 
     def __init__(self, config_path: str = "config.json"):
         """初始化抓取器"""
-        with open(config_path, 'r', encoding='utf-8') as f:
-            self.config = json.load(f)
+        self.config = load_config(config_path)
 
         self.categories_keywords = self.config['categories']
         self.output_config = self.config['output']
@@ -65,6 +65,8 @@ class RSSWeeklyFetcher:
             use_cookies: 是否使用保存的 cookies（默认 True）
         """
         items = []
+        username = username or self.rss_config.get('lingowhale_username')
+        password = password or self.rss_config.get('lingowhale_password')
 
         if not PLAYWRIGHT_AVAILABLE:
             print("✗ LingoWhale: 需要安装 playwright")
