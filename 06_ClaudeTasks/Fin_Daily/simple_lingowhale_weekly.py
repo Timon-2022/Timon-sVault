@@ -34,7 +34,7 @@ def generate_placeholder_weekly():
 
 ### 现有配置
 
-- **账号**: 18810213016
+- **登录方式**: 在浏览器中手动登录；账号不写入报告
 - **订阅地址**: https://lingowhale.com/channels
 
 ### 待完善功能

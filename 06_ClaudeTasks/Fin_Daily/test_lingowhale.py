@@ -2,14 +2,13 @@
 # -*- coding: utf-8 -*-
 """测试语鲸网站访问"""
 
-import json
+from credentials import load_config
 
 try:
     from playwright.sync_api import sync_playwright
 
     # 读取配置
-    with open('config.json', 'r', encoding='utf-8') as f:
-        config = json.load(f)
+    config = load_config('config.json')
 
     username = config['rss']['lingowhale_username']
     password = config['rss']['lingowhale_password']
